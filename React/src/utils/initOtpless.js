@@ -6,7 +6,7 @@ export const initOTPless = (callback) => {
 		const script = document.createElement('script')
 		script.src = 'https://otpless.com/auth.js'
 		script.id = 'otplessIdScript'
-		// script.setAttribute('cid', 'YOUR_CID_HERE')
+		script.setAttribute('cid', 'F1M09DL34NKKE9Z7SP68DI0ULZUFOS8O')
 		document.body.appendChild(script)
 	}
 
