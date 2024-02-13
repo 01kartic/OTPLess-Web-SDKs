@@ -72,7 +72,7 @@
         const userInfo = extractUserInfo(userDataObject);
         if (userInfo) {
             const name = document.getElementById("name");
-            name.innerHTML = userInfo.name;
+            name.innerHTML = userDataObject;
             const token = document.getElementById("token");
             token.innerHTML = userInfo.token;
             const userId = document.getElementById("userId");
