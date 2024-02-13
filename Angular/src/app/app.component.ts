@@ -20,6 +20,8 @@ export class AppComponent {
     if (isPlatformBrowser(this.platformId)) {
 //@ts-ignore
       window.otpless = (otplessUser) => {
+        localStorage.setItem('otplessUser', JSON.stringify(otplessUser));
+        
         if (otplessUser.email) {
           console.log(otplessUser);
           alert('Token: ' + otplessUser.token + ', Name: ' + otplessUser.email.name + ', Email: ' + otplessUser.email.email);
